@@ -1,0 +1,175 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mansalva&family=Yuji+Syuku&display=swap');
+
+:root {
+  --red-rose: #d12a2a;
+  --deep-ocean-blue: #003c60;
+  --full-white: #ffffff;
+  --tech-white: #f5f5f5;
+  --green-pisces: #a8d08d;
+  --muted-black: #1d1d1d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+/* HEADER */
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding-block: 0.3rem;
+}
+
+header.navbar-container .logo {
+  display: flex;
+  align-items: center;
+}
+
+header.navbar-container .logo p {
+  font-family: "Yuji Syuku", sans-serif;
+  font-size: 1.3em;
+  margin: 0;
+  user-select: none;
+}
+
+header.navbar-container .logo img {
+  width: 65px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--deep-ocean-blue);
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: var(--red-rose);
+  color: var(--full-white);
+  cursor: url('../img/favicon_io/icon-nav.ico'), pointer;
+}
+/* END OF HEADER */
+
+/* JUMBOTRON / hero section */
+.jumbotron {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+  width: 100%;
+  padding: 2em;
+  min-height: 80vh;
+  background-color: var(--deep-ocean-blue);
+}
+
+.jumbotron-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  gap: 2em;
+  height: auto;
+  color: var(--full-white);
+}
+
+.jumbotron-img-container {
+  padding: 1.5em;
+}
+
+img.jumbotron-img {
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.12);
+  border-radius: 100px 30px 100px 30px;
+  transition: transform 0.3s ease;
+}
+
+img.jumbotron-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+h1.title {
+  font-family: "Mansalva", sans-serif;
+  font-size: 4em;
+  text-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 0;
+}
+
+h2.subtitle {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.btn-cta {
+  background-color: var(--red-rose);
+  color: var(--full-white);
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(255, 107, 107, 0.3);
+}
+
+.btn-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(255, 76, 76, 0.3);
+}
+
+.btn-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px rgba(255, 107, 107, 0.2);
+}
+
+/* END OF JUMBOTRON / hero section */
+
+@media (max-width: 768px) {
+  .jumbotron {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 1em;
+  }
+
+  img.jumbotron-img {
+    width: 200px;
+  }
+
+  h1.title {
+    font-size: 2.5em;
+  }
+
+  h2.subtitle {
+    font-size: 1.2em;
+  }
+}
