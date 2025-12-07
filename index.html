@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miya's Kitchen</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon_io/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/favicon_io/favicon.ico"
+    />
     <!-- CSS Utama -->
     <link rel="stylesheet" href="./assets/style/stylesheet.css" />
     <!-- Font Awesome 7.0.1 -->
@@ -16,6 +20,7 @@
     />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="navbar-container">
       <div class="logo">
         <p>おにぎり</p>
@@ -31,6 +36,7 @@
       </nav>
     </header>
 
+    <!-- HERO -->
     <section class="jumbotron">
       <div class="jumbotron-title-container">
         <h1 class="title">Welcome to Miya's Kitchen</h1>
@@ -53,7 +59,84 @@
     </section>
 
     <main>
-      <div id="content"></div>
+      <div id="content">
+        <section class="recipe-section">
+          <h1 class="recipe-title">How to Make Salmon Onigiri</h1>
+          <!-- Recipe Image -->
+          <div class="recipe-image-wrapper">
+            <img
+              src="./assets/img/salmon-onigiri-img.png"
+              alt="Salmon Mayo Onigiri"
+              class="recipe-image"
+            />
+          </div>
+          <p class="recipe-intro">
+            Onigiri (おにぎり), sometimes called Omusubi (おむすび), are
+            Japanese rice balls. They are popular at Japanese convenience
+            stores. In this recipe, you‘ll learn how to make onigiri using
+            Salmon.
+          </p>
+          <!-- Recipe Meta Info -->
+          <div class="recipe-meta">
+            <div><strong>Prep:</strong> 30 minutes</div>
+            <div><strong>Cook:</strong> 30 minutes</div>
+            <div><strong>Total:</strong> 1 hour</div>
+            <div><strong>Servings:</strong> 5 onigiri (8 with a mold)</div>
+          </div>
+          <div class="recipe-container">
+            <div class="recipe-ingredients">
+              <h2>Ingredients</h2>
+              <ul>
+                <li>2 cups Japanese short-grain rice, warm</li>
+                <li>100g cooked or grilled salmon</li>
+                <li>2 tbsp Japanese mayonnaise (Kewpie)</li>
+                <li>1/2 tsp soy sauce</li>
+                <li>A pinch of salt</li>
+                <li>Nori sheets (seaweed)</li>
+              </ul>
+            </div>
+
+            <div class="recipe-steps">
+              <h2>Instructions</h2>
+              <ol>
+                <li>Prepare warm Japanese rice and let it cool slightly.</li>
+                <li>
+                  Shred the cooked salmon, then mix it with mayonnaise and soy
+                  sauce.
+                </li>
+                <li>
+                  Wet your hands and sprinkle a little salt onto your palms.
+                </li>
+                <li>Scoop a handful of rice and gently flatten it.</li>
+                <li>Add the salmon mayo filling in the center.</li>
+                <li>Cover with more rice, then shape into a triangle.</li>
+                <li>
+                  Wrap a strip of nori around the onigiri and serve immediately.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <h3>Promo Hari Ini</h3>
+        <p>⭐ Diskon 20% untuk Onigiri Salmon!</p>
+
+        <h3>Menu Favorit</h3>
+        <ul>
+          <li>Onigiri Salmon Mayo</li>
+          <li>Onigiri Kombu</li>
+          <li>Chicken Teriyaki Bento</li>
+        </ul>
+
+        <h3>Jam Operasional</h3>
+        <p>Setiap Hari: 09:00 - 22:00</p>
+      </aside>
     </main>
+
+    <footer>
+      <p>Belajar Dasar Pemrograman Web &#169; 2025, Miya Osamu</p>
+    </footer>
   </body>
 </html>
