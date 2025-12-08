@@ -31,7 +31,7 @@
       <nav class="nav-list">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#">Recipes</a></li>
           <li><a href="#">Contact</a></li>
           <li>
             <a
@@ -188,6 +188,27 @@
           </p>
         </section>
 
+        <section class="comments-section">
+          <h2 class="comments-title">Let’s Talk</h2>
+          <p class="comments-subtitle">
+            Share your thoughts about this recipe.
+          </p>
+
+          <form class="comments-form">
+            <div class="comment-input-group">
+              <textarea
+                class="comment-textarea"
+                placeholder="Write your comment here..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="comment-submit-btn">
+              Post Comment
+            </button>
+          </form>
+        </section>
+
         <section class="contact-section">
           <h2 class="contact-title">Contact</h2>
           <p class="contact-text">
@@ -274,8 +295,36 @@
       </aside>
     </main>
 
-    <footer>
-      <p>Belajar Dasar Pemrograman Web &#169; 2025, Miya Osamu</p>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h3 class="footer-logo">Onigiri Miya</h3>
+          <p class="footer-desc">Where Every Onigiri Is Crafted with Heart.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Subscribe</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fa-solid fa-envelope"></i> hello@onigirimiyablog.com</p>
+          <p><i class="fa-brands fa-instagram"></i> @onigiri.miya</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Onigiri Miya. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
