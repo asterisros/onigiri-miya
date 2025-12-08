@@ -85,7 +85,7 @@ header.navbar-container .nav-list li:hover a {
   align-items: center;
   width: 100%;
   padding: 2em;
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: var(--deep-ocean-blue);
 }
 
