@@ -14,6 +14,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
 body {
@@ -22,7 +23,9 @@ body {
   margin: 0;
 }
 
-/* HEADER */
+/* =============== */
+/*      HEADER     */
+/* =============== */
 header.navbar-container {
   max-width: 1200px;
   width: 100%;
@@ -75,9 +78,10 @@ header.navbar-container .nav-list li:hover a {
   color: var(--full-white);
   cursor: url("../img/favicon_io/icon-nav.ico"), pointer;
 }
-/* END OF HEADER */
 
-/* JUMBOTRON / hero section */
+/* =============== */
+/*   JUMBOTRON     */
+/* =============== */
 .jumbotron {
   display: flex;
   justify-content: space-between;
@@ -99,22 +103,9 @@ header.navbar-container .nav-list li:hover a {
   color: var(--full-white);
 }
 
-.jumbotron-img-container {
-  padding: 1.5em;
-}
-
-img.jumbotron-img {
-  width: 320px;
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.12);
-  border-radius: 100px 30px 100px 30px;
-  transition: transform 0.3s ease;
-}
-
-img.jumbotron-img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
+/* ===================== */
+/* JUMBOTRON TYPOGRAPHY  */
+/* ===================== */
 h1.title {
   font-family: "Mansalva", sans-serif;
   font-size: 3.5em;
@@ -129,6 +120,9 @@ h2.subtitle {
   margin: 0;
 }
 
+/* ===================== */
+/* JUMBOTRON CTA BUTTON  */
+/* ===================== */
 .btn-cta {
   background-color: var(--red-rose);
   color: var(--full-white);
@@ -152,9 +146,29 @@ h2.subtitle {
   box-shadow: 0 6px 12px rgba(255, 107, 107, 0.2);
 }
 
-/* END OF JUMBOTRON / hero section */
+/* ================== */
+/*  JUMBOTRON IMAGE   */
+/* ================== */
 
-/* MAIN */
+.jumbotron-img-container {
+  padding: 1.5em;
+}
+
+img.jumbotron-img {
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.12);
+  border-radius: 100px 30px 100px 30px;
+  transition: transform 0.3s ease;
+}
+
+img.jumbotron-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ================ */
+/*       MAIN       */
+/* ================ */
 main {
   padding: 0 2em;
   display: flex;
@@ -162,6 +176,9 @@ main {
   cursor: url("../img/favicon_io/icon-nav.ico"), pointer;
 }
 
+/* ================ */
+/*       ASIDE      */
+/* ================ */
 aside {
   flex: 1;
   padding: 1em;
@@ -172,12 +189,19 @@ aside {
   display: flex;
   flex-flow: column nowrap;
   padding: 0 2em;
+  max-width: 1200px;
 }
 
+/* ===================== */
+/*     RECIPE SECTION    */
+/* ===================== */
 .recipe-section {
   padding: auto 2em;
 }
 
+/* ===================== */
+/*      RECIPE TITLE     */
+/* ===================== */
 .recipe-title {
   font-family: "Mansalva", sans-serif;
   font-size: 3em;
@@ -185,6 +209,9 @@ aside {
   margin-bottom: 0.25em;
 }
 
+/* ===================== */
+/*       POSTS META      */
+/* ===================== */
 .post-meta {
   font-size: 0.9rem;
   color: #666;
@@ -197,6 +224,9 @@ aside {
   color: #333;
 }
 
+/* ===================== */
+/*      RECIPE IMAGE     */
+/* ===================== */
 .recipe-image-wrapper {
   text-align: center;
   margin: 2.5em auto;
@@ -214,11 +244,17 @@ aside {
   transform: scale(1.03);
 }
 
+/* ===================== */
+/*     RECIPE INTRO      */
+/* ===================== */
 .recipe-intro {
   font-size: 1.15em;
   line-height: 1.5;
 }
 
+/* ===================== */
+/*     RECIPE META      */
+/* ===================== */
 .recipe-meta {
   display: flex;
   gap: 2em;
@@ -246,6 +282,10 @@ aside {
   align-items: flex-start;
 }
 
+/* ===================================== */
+/*     RECIPE INGREDIENTS AND STEPS      */
+/* =====================================*/
+
 .recipe-ingredients h2,
 .recipe-steps h2 {
   color: var(--red-rose);
@@ -266,6 +306,9 @@ aside {
   padding-left: 0.3em;
 }
 
+/* ============================= */
+/*     RECIPE NOTES AND TIPS     */
+/* ============================= */
 .recipe-notes {
   padding: 1.75rem 1.5rem;
   background: var(--tech-white);
@@ -292,6 +335,9 @@ aside {
   color: #444;
 }
 
+/* ===================== */
+/*    RECIPE CLOSING     */
+/* ===================== */
 .recipe-closing {
   margin-top: 2rem;
   font-size: 1.1rem;
@@ -301,12 +347,14 @@ aside {
   padding: 1rem 0;
 }
 
-/* Comments Section */
+/* ===================== */
+/*   COMMENTS SECTION    */
+/* ===================== */
 .comments-section {
   background: var(--tech-white);
   padding: 2.5em;
   border-radius: 16px;
-  margin-top: 3em;
+  margin-top: 1em;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
 }
 
@@ -348,6 +396,10 @@ aside {
   box-shadow: 0 0 0 3px rgba(0, 60, 96, 0.15);
 }
 
+textarea::placeholder, input::placeholder {
+  font-family: "Lato", sans-serif;
+}
+
 .comment-submit-btn {
   align-self: flex-end;
   padding: 0.6em 1.6em;
@@ -370,7 +422,9 @@ aside {
   transform: translateY(0);
 }
 
-/* ASIDE WRAPPER */
+/* ===================== */
+/*    ASIDE CONTAINER    */
+/* ===================== */
 .sidebar {
   padding: 1.5rem;
   background: var(--tech-white);
@@ -386,7 +440,7 @@ aside {
 }
 
 .sidebar:is(:hover, :focus-within) {
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* SECTION TITLES */
@@ -504,6 +558,12 @@ aside {
   background: var(--red-rose);
 }
 
+#subscribe:target {
+  border: 2px solid var(--red-rose);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
 /* QUOTE BOX */
 .aside-quote {
   padding: 1rem;
@@ -514,7 +574,6 @@ aside {
   text-align: center;
   font-size: 0.95rem;
 }
-
 
 @media (max-width: 768px) {
   .jumbotron {
@@ -626,4 +685,86 @@ aside {
 .footer-bottom p {
   font-size: 0.85rem;
   opacity: 0.75;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .navbar-container .nav-list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-container .nav-list li {
+    margin-bottom: 1.5em;
+  }
+
+  .jumbotron {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .jumbotron-title-container .title {
+    font-size: 2.75em;
+  }
+
+  .jumbotron-title-container .subtitle {
+    font-size: 1.15em;
+  }
+
+  .jumbotron-img-container {
+    padding: 0;
+  }
+
+  img.jumbotron-img {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 2em;
+  }
+
+  img.jumbotron-img:hover {
+    transform: none;
+  }
+
+  .recipe-title {
+    font-size: 2.25em;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #content {
+    padding: 0 1.5em;
+    text-align: justify;
+  }
+
+  .recipe-image-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .recipe-image {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .recipe-image:hover {
+    transform: none;
+  }
+
+  .recipe-intro,
+  .recipe-meta,
+  .recipe-ingredients ul li,
+  .recipe-steps ol li,
+  .recipe-notes li,
+  .recipe-closing {
+    font-size: 1em;
+  }
 }

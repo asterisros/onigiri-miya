@@ -23,16 +23,15 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="navbar-container">
+    <header class="navbar-container" id="home">
       <div class="logo">
         <p>おにぎり</p>
         <img src="./assets/img/logo-onigiri-miya.png" alt="Onigiri Miya" />
       </div>
       <nav class="nav-list">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#recipes">Recipes</a></li>
           <li>
             <a
               href="https://www.dicoding.com/users/halorosa/academies"
@@ -46,7 +45,7 @@
       </nav>
     </header>
 
-    <!-- HERO -->
+    <!-- JUMBOTRON -->
     <section class="jumbotron">
       <div class="jumbotron-title-container">
         <h1 class="title">Welcome to Miya's Kitchen</h1>
@@ -70,10 +69,9 @@
 
     <main>
       <div id="content">
-        <section class="recipe-section">
+        <section class="recipe-section" id="recipes">
           <h1 class="recipe-title">How to Make Salmon Onigiri</h1>
-          <p class="post-meta">Posted at 14:32 by <span>Onigiri Miya</span></p>
-          <!-- Recipe Image -->
+          <p class="post-meta">Published at 8:32 by <span>Miya Osamu</span></p>
           <div class="recipe-image-wrapper">
             <img
               src="./assets/img/salmon-onigiri-img.png"
@@ -208,25 +206,6 @@
             </button>
           </form>
         </section>
-
-        <section class="contact-section">
-          <h2 class="contact-title">Contact</h2>
-          <p class="contact-text">
-            For business inquiries, collaboration, or questions, feel free to
-            reach out:
-          </p>
-
-          <div class="contact-info">
-            <p>
-              <i class="fa-solid fa-envelope"></i>
-              hello@onigirimiyablog.com
-            </p>
-            <p>
-              <i class="fa-brands fa-instagram"></i>
-              @onigiri.miya
-            </p>
-          </div>
-        </section>
       </div>
 
       <aside class="sidebar">
@@ -275,7 +254,7 @@
         </section>
 
         <!-- Subscribe Box -->
-        <section class="subscribe-box">
+        <section class="subscribe-box" id="subscribe">
           <h3 class="aside-title">Subscribe</h3>
 
           <p class="subscribe-text">
@@ -307,18 +286,26 @@
         <div class="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Subscribe</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li>
+              <a
+                href="https://www.dicoding.com/users/halorosa/academies"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                About
+              </a>
+            </li>
+            <li><a href="#subscribe">Subscribe</a></li>
           </ul>
         </div>
 
         <!-- Contact -->
         <div class="footer-contact">
           <h4>Contact</h4>
-          <p><i class="fa-solid fa-envelope"></i> hello@onigirimiyablog.com</p>
-          <p><i class="fa-brands fa-instagram"></i> @onigiri.miya</p>
+          <p><i class="fa-solid fa-envelope"></i> support@onigirimiya.com</p>
+          <p><i class="fa-brands fa-instagram"></i> @onigiri_miya</p>
         </div>
       </div>
 
