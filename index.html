@@ -47,23 +47,25 @@
 
     <!-- JUMBOTRON -->
     <section class="jumbotron">
-      <div class="jumbotron-title-container">
-        <h1 class="title">Welcome to Miya's Kitchen</h1>
-        <h2 class="subtitle">
-          Where Every Onigiri Is Crafted with Heart, Using Fresh Ingredients and
-          Traditional Japanese Techniques to Bring a Taste of Japan to Your
-          Table.
-        </h2>
-        <div class="jumbotron-cta">
-          <button class="btn-cta">Order Now</button>
+      <div class="jumbotron-wrapper">
+        <div class="jumbotron-title-container">
+          <h1 class="title">Welcome to Miya's Kitchen</h1>
+          <h2 class="subtitle">
+            Where Every Onigiri Is Crafted with Heart, Using Fresh Ingredients and
+            Traditional Japanese Techniques to Bring a Taste of Japan to Your
+            Table.
+          </h2>
+          <div class="jumbotron-cta">
+            <button class="btn-cta">Order Now</button>
+          </div>
         </div>
-      </div>
-      <div class="jumbotron-img-container">
-        <img
-          class="jumbotron-img"
-          src="./assets/img/hero-img-onigiri.png"
-          alt="Onigiri"
-        />
+        <div class="jumbotron-img-container">
+          <img
+            class="jumbotron-img"
+            src="./assets/img/hero-img-onigiri.png"
+            alt="Onigiri"
+          />
+        </div>
       </div>
     </section>
 
@@ -274,15 +276,15 @@
       </aside>
     </main>
 
-    <footer class="site-footer">
+    <footer class="footer-wrapper">
       <div class="footer-container">
-        <!-- Brand -->
         <div class="footer-brand">
-          <h3 class="footer-logo">Onigiri Miya</h3>
+          <div class="footer-logo-wrapper">
+            <img class="footer-logo-img" src="./assets/img/footer-logo-onigiri-miya.png" alt="Logo Onigiri Miya">
+            <h3 class="footer-logo-title">Onigiri Miya</h3>
+          </div>
           <p class="footer-desc">Where Every Onigiri Is Crafted with Heart.</p>
         </div>
-
-        <!-- Quick Links -->
         <div class="footer-links">
           <h4>Quick Links</h4>
           <ul>
@@ -297,21 +299,21 @@
                 About
               </a>
             </li>
-            <li><a href="#subscribe">Subscribe</a></li>
+            <li><a href="#subscribe" class="footer-subscribe-link">Subscribe</a></li>
           </ul>
         </div>
-
-        <!-- Contact -->
         <div class="footer-contact">
           <h4>Contact</h4>
           <p><i class="fa-solid fa-envelope"></i> support@onigirimiya.com</p>
           <p><i class="fa-brands fa-instagram"></i> @onigiri_miya</p>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>© 2025 Onigiri Miya. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- Script -->
+     <script src="./assets/js/script.js"></script>
   </body>
 </html>
