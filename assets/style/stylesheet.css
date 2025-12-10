@@ -1,14 +1,24 @@
-/* Font */
+/* ========== */
+/*   FONTS   */
+/* ========== */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mansalva&family=Yuji+Syuku&display=swap");
 
+/* ========== */
+/*   COLORS   */
+/* ========== */
 :root {
   --red-rose: #d12a2a;
   --deep-ocean-blue: #003c60;
   --full-white: #ffffff;
   --tech-white: #f5f5f5;
+  --silvery-white: #e3e3e3;
   --green-pisces: #a8d08d;
+  --muted-black: #1d1d1d;
 }
 
+/* ========== */
+/*    RESET   */
+/* ========== */
 *,
 *::before,
 *::after {
@@ -20,6 +30,7 @@ body {
   height: 100vh;
   font-family: "Lato", sans-serif;
   margin: 0;
+  color: var(--muted-black);
 }
 
 /* =============== */
@@ -82,14 +93,18 @@ header.navbar-container .nav-list li:hover a {
 /*   JUMBOTRON     */
 /* =============== */
 .jumbotron {
+  padding: 2em;
+  background-color: var(--deep-ocean-blue);
+}
+
+.jumbotron-wrapper {
+  margin: 1.2em auto;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 1em;
   align-items: center;
-  width: 100%;
-  padding: 2em;
-  min-height: 90vh;
-  background-color: var(--deep-ocean-blue);
+  gap: 2em;
 }
 
 .jumbotron-title-container {
@@ -173,6 +188,8 @@ main {
   display: flex;
   gap: 1.5rem;
   cursor: url("../img/favicon_io/icon-nav.ico"), pointer;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ================ */
@@ -188,7 +205,6 @@ aside {
   display: flex;
   flex-flow: column nowrap;
   padding: 0 2em;
-  max-width: 1200px;
 }
 
 /* ===================== */
@@ -209,18 +225,16 @@ aside {
 }
 
 /* ===================== */
-/*       POSTS META      */
+/*   RECIPES POST META   */
 /* ===================== */
 .post-meta {
   font-size: 0.9rem;
-  color: #666;
   margin-bottom: 1.5rem;
   font-style: italic;
 }
 
 .post-meta span {
   font-weight: bold;
-  color: #333;
 }
 
 /* ===================== */
@@ -265,8 +279,6 @@ aside {
   padding: 1em 1.5em;
   border-radius: 8px;
   margin: 1.75em auto;
-
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   font-size: 1.05em;
 }
 
@@ -283,7 +295,7 @@ aside {
 
 /* ===================================== */
 /*     RECIPE INGREDIENTS AND STEPS      */
-/* =====================================*/
+/* ===================================== */
 
 .recipe-ingredients h2,
 .recipe-steps h2 {
@@ -309,7 +321,7 @@ aside {
 /*     RECIPE NOTES AND TIPS     */
 /* ============================= */
 .recipe-notes {
-  padding: 1.75rem 1.5rem;
+  padding: 1.75em 1.5em;
   background: var(--tech-white);
   border-left: 4px solid var(--green-pisces);
   border-radius: 6px;
@@ -320,7 +332,6 @@ aside {
   margin-top: 0;
   margin-bottom: 0.75rem;
   font-size: 1.3rem;
-  color: #333;
 }
 
 .recipe-notes ol {
@@ -331,19 +342,17 @@ aside {
 .recipe-notes li {
   margin-bottom: 0.5rem;
   line-height: 1.55;
-  color: #444;
 }
 
 /* ===================== */
 /*    RECIPE CLOSING     */
 /* ===================== */
 .recipe-closing {
-  margin-top: 2rem;
-  font-size: 1.1rem;
+  margin-top: 2em;
+  font-size: 1.1em;
   text-align: center;
   font-style: italic;
-  color: #555;
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 /* ===================== */
@@ -358,15 +367,14 @@ aside {
 }
 
 .comments-title {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-weight: 700;
   color: var(--deep-ocean-blue);
   margin-bottom: 0.2em;
 }
 
 .comments-subtitle {
-  font-size: 0.95rem;
-  color: var(--muted-black);
+  font-size: 0.95em;
   opacity: 0.75;
   margin-bottom: 1.5em;
 }
@@ -382,10 +390,10 @@ aside {
   min-height: 160px;
   padding: 1em;
   border-radius: 12px;
-  border: 1.5px solid #dcdcdc;
-  font-size: 0.95rem;
+  border: 1.5px solid var(--silvery-white);
+  font-size: 0.95em;
   resize: vertical;
-  background: #fff;
+  background: var(--full-white);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -395,7 +403,8 @@ aside {
   box-shadow: 0 0 0 3px rgba(0, 60, 96, 0.15);
 }
 
-textarea::placeholder, input::placeholder {
+textarea::placeholder,
+input::placeholder {
   font-family: "Lato", sans-serif;
 }
 
@@ -406,7 +415,7 @@ textarea::placeholder, input::placeholder {
   border: none;
   background: var(--deep-ocean-blue);
   color: var(--full-white);
-  font-size: 0.95rem;
+  font-size: 0.95em;
   cursor: pointer;
   font-weight: 600;
   transition: background-color 0.25s ease, transform 0.1s ease;
@@ -425,15 +434,17 @@ textarea::placeholder, input::placeholder {
 /*    ASIDE CONTAINER    */
 /* ===================== */
 .sidebar {
-  padding: 1.5rem;
+  padding: 1.5em;
   background: var(--tech-white);
   border-radius: 12px;
+
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  border: 1px solid #e3e3e3;
+  gap: 2em;
+  border: 1px solid var(--silvery-white);
+
   position: sticky;
-  top: 2rem;
+  top: 2em;
   align-self: flex-start;
   transition: box-shadow 0.2s ease;
 }
@@ -442,7 +453,6 @@ textarea::placeholder, input::placeholder {
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* SECTION TITLES */
 .owner-heading,
 .aside-title {
   color: var(--deep-ocean-blue);
@@ -522,6 +532,25 @@ textarea::placeholder, input::placeholder {
   padding: 1rem;
 }
 
+.subscribe-box.highlight {
+  border: 1px solid var(--red-rose);
+  border-radius: 12px;
+  position: relative;
+  animation: highlightEffect 2.5s ease-out forwards;
+}
+
+@keyframes highlightEffect {
+  0% {
+    box-shadow: 0 0 0px var(--red-rose);
+  }
+  50% {
+    box-shadow: 0 0 12px var(--red-rose);
+  }
+  100% {
+    box-shadow: 0 0 0px var(--red-rose);
+  }
+}
+
 .subscribe-text {
   color: #555;
   font-size: 0.9rem;
@@ -557,12 +586,6 @@ textarea::placeholder, input::placeholder {
   background: var(--red-rose);
 }
 
-#subscribe:target {
-  border: 2px solid var(--red-rose);
-  border-radius: 12px;
-  padding: 1rem;
-}
-
 /* QUOTE BOX */
 .aside-quote {
   padding: 1rem;
@@ -595,10 +618,10 @@ textarea::placeholder, input::placeholder {
 }
 
 /* FOOTER */
-.site-footer {
+.footer-wrapper {
   background: var(--deep-ocean-blue);
   color: var(--full-white);
-  padding: 2.5em 2em 1.5em;
+  padding: 2.5em 1em 1.5em;
   margin-top: 4em;
 }
 
@@ -612,15 +635,28 @@ textarea::placeholder, input::placeholder {
 .footer-brand,
 .footer-links,
 .footer-contact {
-  flex: 1 1 220px;
+  flex: 1 1 200px;
 }
 
-/* Logo */
-.footer-logo {
+.footer-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+img.footer-logo-img {
+  width: 38px;
+  height: 38px;
+  border: 1px solid white;
+  border-radius: 999px;
+}
+
+h3.footer-logo-title {
   font-family: "Mansalva", sans-serif;
   font-size: 1.8rem;
   margin-bottom: 0.3em;
   color: var(--full-white);
+  margin: 0;
 }
 
 .footer-desc {
@@ -629,7 +665,6 @@ textarea::placeholder, input::placeholder {
   line-height: 1.4;
 }
 
-/* Links */
 .footer-links h4,
 .footer-contact h4 {
   font-size: 1.05rem;
@@ -661,7 +696,6 @@ textarea::placeholder, input::placeholder {
   opacity: 1;
 }
 
-/* Contact */
 .footer-contact p {
   font-size: 0.9rem;
   margin: 0.3rem 0;
@@ -673,17 +707,15 @@ textarea::placeholder, input::placeholder {
   color: var(--red-rose);
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
   padding-top: 1em;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-bottom p {
-  font-size: 0.85rem;
-  opacity: 0.75;
+  font-size: 0.9em;
 }
 
 @media screen and (max-width: 768px) {
@@ -702,7 +734,7 @@ textarea::placeholder, input::placeholder {
     margin-bottom: 1.5em;
   }
 
-  .jumbotron {
+  .jumbotron-wrapper {
     flex-direction: column;
     text-align: center;
     padding: 0;
@@ -765,5 +797,13 @@ textarea::placeholder, input::placeholder {
   .recipe-notes li,
   .recipe-closing {
     font-size: 1em;
+  }
+
+  .comments-section {
+    padding: 0;
+  }
+
+  .footer-container {
+    gap: 0;
   }
 }
