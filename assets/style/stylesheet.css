@@ -359,7 +359,6 @@ aside {
 /*   COMMENTS SECTION    */
 /* ===================== */
 .comments-section {
-  background: var(--tech-white);
   padding: 2.5em;
   border-radius: 16px;
   margin-top: 1em;
@@ -792,7 +791,6 @@ img.footer-logo-img {
 
   /* COMMENTS SECTION */
   .comments-section {
-    background: transparent;
     padding: 0;
   }
 
