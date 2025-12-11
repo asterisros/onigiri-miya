@@ -1,19 +1,21 @@
-const footerSubLink = document.querySelector(".footer-subscribe-link");
+const footerSubscribeQuickLink = document.querySelector(
+  ".footer-subscribe-link"
+);
 const subscribeSection = document.getElementById("subscribe");
 
-footerSubLink.addEventListener("click", (e) => {
+footerSubscribeQuickLink.addEventListener("click", (e) => {
   e.preventDefault();
 
-  // Scroll ke section subscribe dengan animasi halus
+  // Scroll to subscribe section smoothly
   subscribeSection.scrollIntoView({
     behavior: "smooth",
     block: "center",
   });
 
-  // Menambah class highlight
+  // Add class highlight for visual effect
   subscribeSection.classList.add("highlight");
 
-  // Menghapus class highlight setelah 3 detik
+  // Delete class highlight after 3 seconds
   setTimeout(() => {
     subscribeSection.classList.remove("highlight");
   }, 3000);
