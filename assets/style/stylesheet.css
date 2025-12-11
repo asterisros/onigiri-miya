@@ -792,6 +792,7 @@ img.footer-logo-img {
 
   /* COMMENTS SECTION */
   .comments-section {
+    background: none;
     padding: 0;
   }
 
